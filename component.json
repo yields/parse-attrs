@@ -1,0 +1,16 @@
+{
+  "name": "parse-attrs",
+  "repo": "yields/parse-attrs",
+  "description": "attributes parser.",
+  "version": "0.0.1",
+  "keywords": ["parser", "attrs"],
+  "dependencies": {},
+  "development": {
+    "visionmedia/mocha": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
