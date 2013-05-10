@@ -7,7 +7,21 @@
 
     $ component install yields/parse-attrs
 
-## API
+## Example
+
+```js
+assert('baz' == parse('foo="baz"').foo);
+assert('baz' == parse("foo='baz'").foo);
+assert('baz' == parse('foo=baz').foo);
+assert('' == parse('foo').foo);
+var attrs = parse('foo bar baz');
+assert('' == attrs.foo);
+assert('' == attrs.bar);
+assert('' == attrs.baz);
+assert('bar' == attrs.foo);
+assert('baz' == attrs.bar);
+assert('foo bar' == attrs.baz);
+```
 
    
 
